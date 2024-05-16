@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">EM-ElectronicWallet</string>
+    <string name="app_name">EM - Electronic Wallet</string>
+    <string name="app_name_start">EM\nElectronic Wallet</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="hello">Chào buổi sáng!</string>
+    <string name="user_name">PHAN KHẮC MẠNH</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="transfer_money">Chuyển Tiền</string>
+    <string name="credit_card">Dịch Vụ Thẻ</string>
+    <string name="bill">Thanh Toán</string>
+    <string name="shopping">Mua Sắm</string>
+    <string name="home">Trang Chủ</string>
+    <string name="promotion">Ưu Đãi</string>
+    <string name="qr">Quét Mã</string>
+    <string name="history">Lịch Sử</string>
+    <string name="user">Tôi</string>
 </resources>
