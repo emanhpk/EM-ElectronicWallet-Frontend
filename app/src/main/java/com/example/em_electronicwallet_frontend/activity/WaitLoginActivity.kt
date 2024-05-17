@@ -1,5 +1,6 @@
 package com.example.em_electronicwallet_frontend.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
@@ -17,5 +18,13 @@ class WaitLoginActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
+
+        init()
+    }
+
+    private fun init() {
+        binding.bottomLogin.setOnClickListener {
+            startActivity(Intent(this@WaitLoginActivity, MainActivity::class.java))
+        }
     }
 }

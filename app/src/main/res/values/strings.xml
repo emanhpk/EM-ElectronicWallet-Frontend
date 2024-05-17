@@ -11,7 +11,12 @@
     <string name="shopping">Mua Sắm</string>
     <string name="home">Trang Chủ</string>
     <string name="promotion">Ưu Đãi</string>
-    <string name="qr">Quét Mã</string>
+    <string name="qr">Quét QR</string>
     <string name="history">Lịch Sử</string>
+    <string name="notification">Thông Báo</string>
+    <string name="setting">Cài Đặt</string>
     <string name="user">Tôi</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="number_phone">0376888888</string>
+    <string name="forgot_password">Quyên Mật Khẩu</string>
 </resources>
