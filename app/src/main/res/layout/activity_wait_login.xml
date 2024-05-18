@@ -186,7 +186,7 @@
         android:background="@drawable/white_bg"
         android:drawableStart="@drawable/padlock"
         android:drawableEnd="@drawable/hide"
-        android:drawablePadding="8dp"
+        android:drawablePadding="10dp"
         android:inputType="textPassword"
         android:hint="@string/password"
         android:textColorHint="@color/grey"

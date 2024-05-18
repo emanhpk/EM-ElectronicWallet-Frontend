@@ -19,4 +19,9 @@
     <string name="password">Mật Khẩu</string>
     <string name="number_phone">0376888888</string>
     <string name="forgot_password">Quyên Mật Khẩu</string>
+    <string name="input_number_phone">Nhập số điện thoại</string>
+    <string name="register">
+        <font color="#FF000000">Chưa có tài khoản?</font>
+        <font color="#3562FF">Đăng Ký</font>
+    </string>
 </resources>
