@@ -24,4 +24,13 @@
         <font color="#FF000000">Chưa có tài khoản?</font>
         <font color="#3562FF">Đăng Ký</font>
     </string>
+    <string name="sign_up">Đăng Ký Tài Khoản</string>
+    <string name="input_user_name">Nhập tên tài khoản</string>
+    <string name="input_confirm_password">Nhập lại mật khẩu</string>
+    <string name="input_number_id">Nhập số CCCD</string>
+    <string name="out_register">
+        <font color="#FF000000">Bạn đã có tài khoản?</font>
+        <font color="#3562FF">Đăng Nhập</font>
+    </string>
+    <string name="bottom_register">Đăng Ký</string>
 </resources>

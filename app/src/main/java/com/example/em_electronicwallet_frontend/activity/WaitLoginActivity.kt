@@ -26,5 +26,9 @@ class WaitLoginActivity : AppCompatActivity() {
         binding.bottomLogin.setOnClickListener {
             startActivity(Intent(this@WaitLoginActivity, MainActivity::class.java))
         }
+
+        binding.imageBackgroundLogout.setOnClickListener {
+            startActivity(Intent(this@WaitLoginActivity, LoginActivity::class.java))
+        }
     }
 }
