@@ -1,4 +1,4 @@
-package com.example.em_electronicwallet_frontend.activity
+package com.example.em_electronicwallet_frontend.ui_components.activity
 
 import android.content.Intent
 import android.os.Bundle
