@@ -1,13 +1,710 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/light_grey_bg2"
     tools:context=".ui_components.fragment.HomeFragment">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home page" />
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/imageBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wait_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-35dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="75dp"
+            android:orientation="vertical"
+            android:background="@drawable/white_bg4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayoutAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginEnd="19dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/light_blue_bg">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textPaymentAccount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginStart="15dp"
+                                android:text="@string/payment_account"
+                                android:textSize="14sp"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/textNumberAccount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:text="@string/number_phone"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/bottomInfoAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_marginEnd="15dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:drawableEnd="@drawable/angle_small_right"
+                            android:drawablePadding="5dp"
+                            android:background="@drawable/blue_bg"
+                            android:text="@string/info_account"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            style="@android:style/Widget.Button"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginEnd="19dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:id="@+id/bottomTransferMoney"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/blue_bg6">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/transaction"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/transfer_money"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomCreditCard"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/blue_bg5">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/credit_card"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/credit_card"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="19dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:id="@+id/bottomSaveMoney"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/blue_bg3">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/piggy_bank"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/save_money"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomPromotion"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/blue_bg4">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:srcCompat="@drawable/gift_card"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/promotion"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textElectronicServices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginEnd="19dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/blue_bg3"
+                        android:text="@string/electronic_services"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="19dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:id="@+id/bottomTransferMoney2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/money_coin_transfer"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/transfer_money"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomBill"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/payroll_calendar"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bill"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomCreditCard2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/credit_card_blue"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/credit_card"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="19dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:id="@+id/bottomPhoneRecharge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/mobile_notch"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/phone_recharge"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomLoan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/wifi_alt"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_4g"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottom4G"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/budget_alt"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loan"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="19dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:id="@+id/bottomBusTicket"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/bus"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bus_ticket"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomCinemaTicket"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/film"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cinema_ticket"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomBalanceFluctuations"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/clipboard_list"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/balance_fluctuations"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:id="@+id/bottomFinancialManagement"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/corporate"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/financial_management"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomSupport"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/message_question"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/support"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bottomSwitchboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.333"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/phone_rotary"
+                                app:tint="@color/blue"
+                                android:importantForAccessibility="no" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/switchboard"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/imageLogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/logo"
+                    android:importantForAccessibility="no" />
+
+                <TextView
+                    android:id="@+id/textAppName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="@string/app_name"
+                    android:textSize="26sp"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/search_icon"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:ems="20"
+                android:hint="@string/search"
+                android:inputType="text"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:importantForAutofill="no" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageProfile1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    app:srcCompat="@drawable/profile"
+                    android:importantForAccessibility="no" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textHello"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hello"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/textUserName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="@string/user_name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

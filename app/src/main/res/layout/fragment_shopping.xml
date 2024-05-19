@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/light_grey_bg2"
     tools:context=".ui_components.fragment.ShoppingFragment">
 
     <TextView
