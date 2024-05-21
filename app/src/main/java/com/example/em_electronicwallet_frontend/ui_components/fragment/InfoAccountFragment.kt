@@ -6,17 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.em_electronicwallet_frontend.R
-import com.example.em_electronicwallet_frontend.databinding.FragmentHomeBinding
+import com.example.em_electronicwallet_frontend.databinding.FragmentInfoAccountBinding
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class HomeFragment : Fragment() {
+class InfoAccountFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentInfoAccountBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,20 +25,20 @@ class HomeFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
-
+    
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentInfoAccountBinding.inflate(inflater, container, false)
 
-        binding.bottomInfoAccount.setOnClickListener {
-            replaceFragment(InfoAccountFragment())
+        binding.textClose.setOnClickListener {
+            parentFragmentManager.popBackStack()
         }
 
-        binding.textElectronicServices.setOnClickListener {
+        binding.bottomTransferMoney.setOnClickListener {
             requireActivity().runOnUiThread {
-                Toast.makeText(requireContext(), "text electronic services", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "bottom transfer money", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -54,18 +53,11 @@ class HomeFragment : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
+            InfoAccountFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
-    }
-
-    private fun replaceFragment(fragment: Fragment) {
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.layoutInfoAccount, fragment)
-            .addToBackStack(null)
-            .commit()
     }
 }

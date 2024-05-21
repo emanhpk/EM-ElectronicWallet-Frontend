@@ -46,4 +46,9 @@
     <string name="financial_management">Quản Lý\nTài Chính Cá Nhân</string>
     <string name="support">Hỗ Trợ\nKhách Hàng</string>
     <string name="switchboard">Tổng Đài\nCSKH</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close">Đóng</string>
+    <string name="number_account">Số tài khoản</string>
+    <string name="account_balance">Số dư tài khoản</string>
+    <string name="number_money">24,022,003,690 VND</string>
 </resources>
