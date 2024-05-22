@@ -57,4 +57,13 @@
     <string name="recently">Gần Đây</string>
     <string name="next">Tiếp Tục</string>
     <string name="emb">EMB</string>
+    <string name="transaction_details">Thông Tin Giao Dịch</string>
+    <string name="account">Tài khoản gốc</string>
+    <string name="move_in">Chuyển đến</string>
+    <string name="text_number_money">Số tiền</string>
+    <string name="input_number_money">Nhập số tiền</string>
+    <string name="vnd">VNĐ</string>
+    <string name="content_transaction">Nội dung giao dịch</string>
+    <string name="input_content_transaction">Nhập nội dung giao dịch</string>
+    <string name="save_beneficiary_phonebook">Lưu vào danh bạ người thụ hưởng</string>
 </resources>

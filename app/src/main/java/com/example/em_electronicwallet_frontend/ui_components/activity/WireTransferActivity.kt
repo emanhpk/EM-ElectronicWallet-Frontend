@@ -1,5 +1,6 @@
 package com.example.em_electronicwallet_frontend.ui_components.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -7,16 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.em_electronicwallet_frontend.R
-import com.example.em_electronicwallet_frontend.databinding.ActivityTransferMoneyBinding
+import com.example.em_electronicwallet_frontend.databinding.ActivityWireTransferBinding
 import com.example.em_electronicwallet_frontend.ui_components.fragment.BeneficiaryPhonebookFragment
 import com.example.em_electronicwallet_frontend.ui_components.fragment.BeneficiaryRecentlyFragment
 
-class TransferMoneyActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityTransferMoneyBinding
+class WireTransferActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityWireTransferBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTransferMoneyBinding.inflate(layoutInflater)
+        binding = ActivityWireTransferBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         window.setFlags(
@@ -30,6 +31,10 @@ class TransferMoneyActivity : AppCompatActivity() {
 
     private fun init() {
         binding.imageBack.setOnClickListener { finish() }
+
+        binding.bottomNext.setOnClickListener {
+            startActivity(Intent(this@WireTransferActivity, TransactionDetailsActivity::class.java))
+        }
     }
 
     private fun initTransferFast() {

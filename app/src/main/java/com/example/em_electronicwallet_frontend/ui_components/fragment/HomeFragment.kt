@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.em_electronicwallet_frontend.R
 import com.example.em_electronicwallet_frontend.databinding.FragmentHomeBinding
-import com.example.em_electronicwallet_frontend.ui_components.activity.TransferMoneyActivity
+import com.example.em_electronicwallet_frontend.ui_components.activity.WireTransferActivity
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -68,7 +68,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun navigateToTransferMoney() {
-        val intent = Intent(requireContext(), TransferMoneyActivity::class.java)
+        val intent = Intent(requireContext(), WireTransferActivity::class.java)
         startActivity(intent)
     }
 
