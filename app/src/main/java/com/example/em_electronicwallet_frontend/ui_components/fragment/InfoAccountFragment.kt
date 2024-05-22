@@ -1,5 +1,6 @@
 package com.example.em_electronicwallet_frontend.ui_components.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.em_electronicwallet_frontend.databinding.FragmentInfoAccountBinding
+import com.example.em_electronicwallet_frontend.ui_components.activity.TransferMoneyActivity
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -25,22 +27,14 @@ class InfoAccountFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
-    
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentInfoAccountBinding.inflate(inflater, container, false)
 
-        binding.textClose.setOnClickListener {
-            parentFragmentManager.popBackStack()
-        }
-
-        binding.bottomTransferMoney.setOnClickListener {
-            requireActivity().runOnUiThread {
-                Toast.makeText(requireContext(), "bottom transfer money", Toast.LENGTH_SHORT).show()
-            }
-        }
+        init()
 
         return binding.root
     }
@@ -59,5 +53,16 @@ class InfoAccountFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    private fun init() {
+        binding.textClose.setOnClickListener {
+            parentFragmentManager.popBackStack()
+        }
+
+        binding.bottomTransferMoney.setOnClickListener {
+            val intent = Intent(requireContext(), TransferMoneyActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EMElectronicWalletFrontend"
         tools:targetApi="31">
         <activity
+            android:name=".ui_components.activity.TransferMoneyActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui_components.activity.RegisterActivity"
             android:exported="false" />
         <activity

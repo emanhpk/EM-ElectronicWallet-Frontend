@@ -1,13 +1,14 @@
 package com.example.em_electronicwallet_frontend.ui_components.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.em_electronicwallet_frontend.R
 import com.example.em_electronicwallet_frontend.databinding.FragmentHomeBinding
+import com.example.em_electronicwallet_frontend.ui_components.activity.TransferMoneyActivity
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -33,15 +34,7 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        binding.bottomInfoAccount.setOnClickListener {
-            replaceFragment(InfoAccountFragment())
-        }
-
-        binding.textElectronicServices.setOnClickListener {
-            requireActivity().runOnUiThread {
-                Toast.makeText(requireContext(), "text electronic services", Toast.LENGTH_SHORT).show()
-            }
-        }
+        init()
 
         return binding.root
     }
@@ -60,6 +53,23 @@ class HomeFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    private fun init() {
+        binding.bottomInfoAccount.setOnClickListener {
+            replaceFragment(InfoAccountFragment())
+        }
+
+        binding.bottomTransferMoney.setOnClickListener {navigateToTransferMoney()
+        }
+
+        binding.bottomTransferMoney2.setOnClickListener {navigateToTransferMoney()
+        }
+    }
+
+    private fun navigateToTransferMoney() {
+        val intent = Intent(requireContext(), TransferMoneyActivity::class.java)
+        startActivity(intent)
     }
 
     private fun replaceFragment(fragment: Fragment) {

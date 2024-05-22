@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">EM - Electronic Wallet</string>
-    <string name="app_name_start">EM\nElectronic Wallet</string>
+    <string name="app_name">EMB - Electronic Wallet</string>
+    <string name="app_name_start">EMB\nElectronic Wallet</string>
     <string name="search">Tìm kiếm</string>
     <string name="hello">Chào buổi sáng!</string>
     <string name="user_name">PHAN KHẮC MẠNH</string>
@@ -51,4 +51,10 @@
     <string name="number_account">Số tài khoản</string>
     <string name="account_balance">Số dư tài khoản</string>
     <string name="number_money">24,022,003,690 VND</string>
+    <string name="select_beneficiary">Chọn Người Thụ Hưởng</string>
+    <string name="number_account_phone">Số tài khoản / Số điện thoại</string>
+    <string name="phonebook">Danh Bạ</string>
+    <string name="recently">Gần Đây</string>
+    <string name="next">Tiếp Tục</string>
+    <string name="emb">EMB</string>
 </resources>
