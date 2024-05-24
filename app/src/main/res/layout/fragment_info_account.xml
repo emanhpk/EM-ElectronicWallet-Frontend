@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/light_grey_bg3"
+    tools:context=".ui_components.fragment.InfoAccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/white_bg5">
+
+        <TextView
+            android:id="@+id/textInfoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/info_account"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/close"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewNumberAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="65dp"
+            android:text="@string/number_account"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInfoAccount" />
+
+        <TextView
+            android:id="@+id/textNumberAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/number_phone"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNumberAccount" />
+
+        <LinearLayout
+            android:id="@+id/bottomQr"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/light_grey_oval_bg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textNumberAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewNumberAccount">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/qr_thin" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomCopy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/light_grey_oval_bg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textNumberAccount"
+            app:layout_constraintEnd_toStartOf="@+id/bottomQr"
+            app:layout_constraintTop_toTopOf="@+id/textViewNumberAccount">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/copy_thin" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewAccountBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/account_balance"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNumberAccount" />
+
+        <TextView
+            android:id="@+id/textAccountBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/number_money"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAccountBalance" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bottomTransferMoney"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="124dp"
+            android:background="@drawable/blue_bg7"
+            android:text="@string/transfer_money"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAccountBalance" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
