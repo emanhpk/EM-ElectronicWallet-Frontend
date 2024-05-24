@@ -66,4 +66,30 @@
     <string name="content_transaction">Nội dung giao dịch</string>
     <string name="input_content_transaction">Nhập nội dung giao dịch</string>
     <string name="save_beneficiary_phonebook">Lưu vào danh bạ người thụ hưởng</string>
+    <string name="confirm_transaction">Xác Nhận Giao Dịch</string>
+    <string name="origin_account">Tài khoản nguồn</string>
+    <string name="account_beneficiary">Tài khoản thụ hưởng</string>
+    <string name="name_beneficiary">Tên người thụ hưởng</string>
+    <string name="banking_beneficiary">Ngân hàng thụ hưởng</string>
+    <string name="number_money_residual">Số tiền còn lại</string>
+    <string name="date_transfer">Ngày giao dịch</string>
+    <string name="date">23/05/2024 06:24:02</string>
+    <string name="text_content_transfer">Phan Khắc Mạnh chuyển tiền</string>
+    <string name="confirm">Xác Nhận</string>
+    <string name="text_confirm_pay">Mã xác thực OTP bằng phương thức xác thực Smart OTP cho mã giao dịch
+        <font color="#3562FF">291829384923</font>
+        của quý khách được hiển thị ở dưới đây</string>
+    <string name="code_otp">24022003</string>
+    <string name="successful_transaction">Giao Dịch Thành Công</string>
+    <string name="text_content_transaction">Quý khách đã chuyển thành công số tiền
+        <font color="#3562FF">24,022,003,690 VND</font>
+        đến số tài khoản
+        <font color="#3562FF">0376888888 / PHAN KHAC MANH / EMB</font>
+        vào lúc 23/05/2024 06:24:02. Nội dung: Phan Khắc Mạnh chuyển tiền</string>
+    <string name="code_transaction">Mã giao dịch:
+        <font color="#3562FF">291829384923</font></string>
+    <string name="new_transaction">Tạo Giao Dịch Mới</string>
+    <string name="back_home">Quay Lại Trang Chủ</string>
+    <string name="account_pay">Tài khoản thanh toán</string>
+    <string name="new_emb">EMB:</string>
 </resources>

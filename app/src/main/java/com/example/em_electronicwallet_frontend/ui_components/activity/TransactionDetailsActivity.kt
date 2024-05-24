@@ -1,6 +1,7 @@
 package com.example.em_electronicwallet_frontend.ui_components.activity
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -30,6 +31,10 @@ class TransactionDetailsActivity : AppCompatActivity() {
 
     private fun init() {
         binding.imageBack.setOnClickListener { finish() }
+
+        binding.bottomNext.setOnClickListener {
+            startActivity(Intent(this@TransactionDetailsActivity, ConfirmTransactionActivity::class.java))
+        }
     }
 
     private fun setupEditText() {

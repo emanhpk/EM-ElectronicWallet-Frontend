@@ -204,6 +204,7 @@
                     android:textColorHint="@color/grey"
                     android:textSize="16sp"
                     android:textColor="@color/black"
+                    android:maxLength="12"
                     android:background="@drawable/white_bg"
                     android:importantForAutofill="no" />
 
@@ -258,6 +259,7 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:background="@drawable/white_bg"
+                android:maxLength="250"
                 android:importantForAutofill="no" />
 
             <View
