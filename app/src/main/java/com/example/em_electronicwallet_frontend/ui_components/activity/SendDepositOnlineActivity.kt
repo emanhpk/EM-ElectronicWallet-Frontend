@@ -43,6 +43,8 @@ class SendDepositOnlineActivity : AppCompatActivity() {
         binding.bottomNext.setOnClickListener {
             startActivity(Intent(this@SendDepositOnlineActivity, ConfirmTransactionActivity::class.java))
         }
+
+        binding.imageBack.setOnClickListener { finish() }
     }
 
     private fun setupSelectTerm() {

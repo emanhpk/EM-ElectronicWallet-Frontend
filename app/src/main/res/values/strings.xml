@@ -105,4 +105,7 @@
     <string name="select_term">Chọn kỳ hạn</string>
     <string name="number_send">Số tiền gửi (VNĐ)</string>
     <string name="select_maturity_method">Chọn phương thức đáo hạn</string>
+    <string name="account_savings_online">Tài khoản tiết kiệm Online</string>
+    <string name="info_withdraw_money">Thông tin rút tiền</string>
+    <string name="account_receive_money">Tài khoản nhận tiền</string>
 </resources>
