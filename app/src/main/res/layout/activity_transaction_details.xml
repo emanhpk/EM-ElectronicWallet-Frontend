@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/lightGrey"
     tools:context=".ui_components.activity.TransactionDetailsActivity">
 
     <LinearLayout
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/account"
-            android:textColor="@color/grey"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -115,7 +115,7 @@
             android:layout_gravity="end"
             android:text="@string/move_in"
             android:textSize="18sp"
-            android:textColor="@color/grey"/>
+            android:textColor="@color/black"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -185,7 +185,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text_number_money"
-                android:textColor="@color/grey"
+                android:textColor="@color/black"
                 android:textSize="14sp"/>
 
             <LinearLayout
@@ -204,8 +204,8 @@
                     android:textColorHint="@color/grey"
                     android:textSize="16sp"
                     android:textColor="@color/black"
-                    android:maxLength="12"
-                    android:background="@drawable/white_bg"
+                    android:maxLength="15"
+                    android:background="@drawable/light_grey_bg"
                     android:importantForAutofill="no" />
 
                 <TextView
@@ -247,7 +247,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/content_transaction"
                 android:textSize="14sp"
-                android:textColor="@color/grey"/>
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/inputContentTransaction"
@@ -258,7 +258,7 @@
                 android:textColorHint="@color/grey"
                 android:textSize="16sp"
                 android:textColor="@color/black"
-                android:background="@drawable/white_bg"
+                android:background="@drawable/light_grey_bg"
                 android:maxLength="250"
                 android:importantForAutofill="no" />
 
@@ -275,7 +275,7 @@
             android:layout_marginTop="24dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:background="@drawable/light_grey_bg">
+            android:background="@drawable/white_bg4">
 
             <TextView
                 android:layout_width="0dp"

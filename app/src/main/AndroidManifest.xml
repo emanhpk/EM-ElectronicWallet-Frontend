@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EMElectronicWalletFrontend"
         tools:targetApi="31">
         <activity
+            android:name=".ui_components.activity.SendDepositOnlineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_components.activity.DepositMoneyActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui_components.activity.SuccessfulTransactionActivity"
             android:exported="false" />
         <activity

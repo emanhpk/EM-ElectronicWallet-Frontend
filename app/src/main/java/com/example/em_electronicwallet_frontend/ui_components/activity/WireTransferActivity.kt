@@ -30,7 +30,9 @@ class WireTransferActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        binding.imageBack.setOnClickListener { finish() }
+        binding.imageBack.setOnClickListener {
+            startActivity(Intent(this@WireTransferActivity, MainActivity::class.java))
+        }
 
         binding.bottomNext.setOnClickListener {
             startActivity(Intent(this@WireTransferActivity, TransactionDetailsActivity::class.java))
