@@ -27,12 +27,20 @@ class DepositMoneyActivity : AppCompatActivity() {
     }
 
     private fun init() {
+        binding.imageBack.setOnClickListener {
+            startActivity(Intent(this@DepositMoneyActivity, MainActivity::class.java))
+        }
+
         binding.bottomSendDepositOnline.setOnClickListener {
             startActivity(Intent(this@DepositMoneyActivity, SendDepositOnlineActivity::class.java))
         }
 
         binding.bottomWithdrawDepositOnline.setOnClickListener {
             startActivity(Intent(this@DepositMoneyActivity, WithdrawSavingsOnlineActivity::class.java))
+        }
+
+        binding.bottomOpenAccumulation.setOnClickListener {
+            startActivity(Intent(this@DepositMoneyActivity, OpenAccumulationActivity::class.java))
         }
     }
 }

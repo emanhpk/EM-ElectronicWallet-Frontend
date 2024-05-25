@@ -33,7 +33,7 @@
         <font color="#3562FF">Đăng Nhập</font>
     </string>
     <string name="bottom_register">Đăng Ký</string>
-    <string name="payment_account">Tài khoản thanh toán</string>
+    <string name="payment_account">Tài khoản</string>
     <string name="info_account">Thông tin tài khoản</string>
     <string name="save_money">Tiết Kiệm</string>
     <string name="electronic_services">Dịch Vụ Điện Tử</string>
@@ -43,7 +43,7 @@
     <string name="balance_fluctuations">Biến Động\nSố Dư</string>
     <string name="bus_ticket">Vé Xe</string>
     <string name="cinema_ticket">Vé Xem Phim</string>
-    <string name="financial_management">Quản Lý\nTài Chính Cá Nhân</string>
+    <string name="financial_management">Tài Chính\nCá Nhân</string>
     <string name="support">Hỗ Trợ\nKhách Hàng</string>
     <string name="switchboard">Tổng Đài\nCSKH</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

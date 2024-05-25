@@ -47,7 +47,7 @@
             android:layout_marginTop="65dp"
             android:text="@string/number_account"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInfoAccount" />
 
@@ -59,7 +59,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/number_phone"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewNumberAccount" />
@@ -110,7 +110,7 @@
             android:layout_marginTop="24dp"
             android:text="@string/account_balance"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textNumberAccount" />
 
@@ -122,7 +122,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/number_money"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewAccountBalance" />
@@ -139,7 +139,7 @@
             android:background="@drawable/blue_bg7"
             android:text="@string/transfer_money"
             android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

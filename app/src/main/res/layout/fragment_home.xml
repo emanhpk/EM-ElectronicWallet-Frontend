@@ -71,7 +71,7 @@
                                 android:layout_marginTop="15dp"
                                 android:layout_marginStart="15dp"
                                 android:text="@string/payment_account"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textColor="@color/white" />
 
                             <TextView
@@ -82,7 +82,7 @@
                                 android:layout_marginStart="15dp"
                                 android:layout_marginBottom="15dp"
                                 android:text="@string/number_phone"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"/>
 
@@ -100,7 +100,7 @@
                             android:background="@drawable/blue_bg"
                             android:text="@string/info_account"
                             android:textColor="@color/white"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -136,7 +136,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/transfer_money"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"/>
 
@@ -162,7 +162,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/credit_card"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"/>
 
@@ -198,7 +198,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/save_money"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"/>
 
@@ -224,7 +224,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/promotion"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"/>
 
@@ -278,7 +278,7 @@
                                 android:text="@string/transfer_money"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -304,7 +304,7 @@
                                 android:text="@string/bill"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -330,7 +330,7 @@
                                 android:text="@string/credit_card"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
                     </LinearLayout>
@@ -366,7 +366,7 @@
                                 android:text="@string/phone_recharge"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textAlignment="center"/>
 
                         </LinearLayout>
@@ -393,7 +393,7 @@
                                 android:text="@string/_4g"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -419,7 +419,7 @@
                                 android:text="@string/loan"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
                     </LinearLayout>
@@ -455,7 +455,7 @@
                                 android:text="@string/bus_ticket"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -481,7 +481,7 @@
                                 android:text="@string/cinema_ticket"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"/>
+                                android:textSize="16sp"/>
 
                         </LinearLayout>
 
@@ -507,7 +507,7 @@
                                 android:text="@string/balance_fluctuations"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textAlignment="center"/>
 
                         </LinearLayout>
@@ -545,7 +545,7 @@
                                 android:text="@string/financial_management"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textAlignment="center"/>
 
                         </LinearLayout>
@@ -572,7 +572,7 @@
                                 android:text="@string/support"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textAlignment="center"/>
 
                         </LinearLayout>
@@ -599,7 +599,7 @@
                                 android:text="@string/switchboard"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textSize="16sp"
                                 android:textAlignment="center"/>
 
                         </LinearLayout>
@@ -691,7 +691,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/hello"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:textColor="@color/white"/>
 
                     <TextView

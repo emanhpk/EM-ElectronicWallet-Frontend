@@ -92,7 +92,7 @@
                 android:layout_weight="1"
                 android:text="@string/send_deposit_online"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -122,7 +122,7 @@
                 android:layout_weight="1"
                 android:text="@string/withdraw_deposit_online"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -177,7 +177,7 @@
                 android:layout_weight="1"
                 android:text="@string/open_accumulation"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -206,7 +206,7 @@
                 android:layout_weight="1"
                 android:text="@string/send_accumulation_online"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
 
         </LinearLayout>
@@ -236,7 +236,7 @@
                 android:layout_weight="1"
                 android:text="@string/withdraw_accumulation_online"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
 
         </LinearLayout>

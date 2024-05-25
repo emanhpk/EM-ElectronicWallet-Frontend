@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/home"
                         android:textColor="@color/blue"
-                        android:textSize="13sp"/>
+                        android:textSize="14sp"/>
 
                     <View
                         android:id="@+id/viewHome"
@@ -95,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/shopping"
                         android:textColor="@color/grey"
-                        android:textSize="13sp"/>
+                        android:textSize="14sp"/>
 
                     <View
                         android:id="@+id/viewShopping"
@@ -146,7 +146,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/notification"
                         android:textColor="@color/grey"
-                        android:textSize="13sp"/>
+                        android:textSize="14sp"/>
 
                     <View
                         android:id="@+id/viewNotification"
@@ -184,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/setting"
                         android:textColor="@color/grey"
-                        android:textSize="13sp"/>
+                        android:textSize="14sp"/>
 
                     <View
                         android:id="@+id/viewSetting"
