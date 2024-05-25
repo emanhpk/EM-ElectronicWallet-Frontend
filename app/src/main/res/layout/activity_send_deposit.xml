@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightGrey"
-    tools:context=".ui_components.activity.OpenAccumulationActivity">
+    tools:context=".ui_components.activity.SendDepositActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="35dp"
-            android:text="@string/open_accumulation"
+            android:text="@string/send_accumulation_online"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
-        android:text="@string/info_send_money"
+        android:text="@string/info_payment"
         android:textSize="16sp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewInfoDeposit">
 
         <LinearLayout
-            android:id="@+id/bottomSelectDeposit"
+            android:id="@+id/bottomSelectAccountDeposit"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="24dp"
@@ -143,48 +143,11 @@
             tools:ignore="UseCompoundDrawables">
 
             <TextView
-                android:id="@+id/textSelectDeposit"
+                android:id="@+id/textSelectAccountDeposit"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/select_product_accumulation"
-                android:textColor="@color/grey"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:importantForAccessibility="no"
-                app:srcCompat="@drawable/caret_down"
-                app:tint="@color/blue" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/blue_bg"/>
-
-        <LinearLayout
-            android:id="@+id/bottomSelectTerm"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            tools:ignore="UseCompoundDrawables">
-
-            <TextView
-                android:id="@+id/textSelectTerm"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/select_term"
+                android:text="@string/select_account_deposit"
                 android:textColor="@color/grey"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
@@ -195,84 +158,17 @@
                 app:srcCompat="@drawable/caret_down"
                 app:tint="@color/blue"
                 android:importantForAccessibility="no" />
+
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/blue_bg"/>
-
-        <EditText
-            android:id="@+id/inputMoneySend"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/white_bg"
-            android:inputType="number"
-            android:hint="@string/number_send"
-            android:textColorHint="@color/grey"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:maxLength="15"
-            android:importantForAutofill="no" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/blue_bg"/>
-
-        <EditText
-            android:id="@+id/inputNameAccumulation"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/white_bg"
-            android:inputType="text"
-            android:hint="@string/memo_name"
-            android:textColorHint="@color/grey"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:maxLength="15"
-            android:importantForAutofill="no" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/blue_bg"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
-            android:orientation="vertical"
-            android:background="@drawable/light_grey_bg">
+            android:background="@drawable/blue_bg"/>
 
-            <CheckBox
-                android:id="@+id/myCheckBox"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="5dp"
-                android:padding="10dp"
-                android:text="@string/accumulation_term"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton

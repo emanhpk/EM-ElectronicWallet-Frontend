@@ -9,17 +9,17 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.em_electronicwallet_frontend.R
-import com.example.em_electronicwallet_frontend.databinding.ActivitySendDepositOnlineBinding
+import com.example.em_electronicwallet_frontend.databinding.ActivitySendSavingsBinding
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.util.Locale
 
-class SendDepositOnlineActivity : AppCompatActivity() {
-    private lateinit var binding: ActivitySendDepositOnlineBinding
+class SendSavingsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySendSavingsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySendDepositOnlineBinding.inflate(layoutInflater)
+        binding = ActivitySendSavingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         window.setFlags(
@@ -41,7 +41,7 @@ class SendDepositOnlineActivity : AppCompatActivity() {
         }
 
         binding.bottomNext.setOnClickListener {
-            startActivity(Intent(this@SendDepositOnlineActivity, ConfirmTransactionActivity::class.java))
+            startActivity(Intent(this@SendSavingsActivity, ConfirmTransactionActivity::class.java))
         }
 
         binding.imageBack.setOnClickListener { finish() }

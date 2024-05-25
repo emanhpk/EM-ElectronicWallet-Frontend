@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightGrey"
-    tools:context=".ui_components.activity.WithdrawSavingsOnlineActivity">
+    tools:context=".ui_components.activity.SendSavingsActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="35dp"
-            android:text="@string/withdraw_deposit_online"
+            android:text="@string/send_deposit_online"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -56,52 +56,63 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
 
-        <LinearLayout
-            android:id="@+id/bottomAccountSavings"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            tools:ignore="UseCompoundDrawables">
+            android:text="@string/account_origin"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
-            <TextView
-                android:id="@+id/textAccountSaving"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/account_savings_online"
-                android:textColor="@color/grey"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textNumberAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/number_phone"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                app:srcCompat="@drawable/caret_down"
-                app:tint="@color/blue"
-                android:importantForAccessibility="no" />
-        </LinearLayout>
-
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
-            android:background="@drawable/blue_bg"/>
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available_balances"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textAvailableBalances"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:text="@string/number_money"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewInfoWithdrawMoney"
+        android:id="@+id/textViewInfoDeposit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
-        android:text="@string/info_withdraw_money"
+        android:text="@string/info_deposit"
         android:textSize="16sp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,10 +129,10 @@
         android:background="@drawable/white_bg4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInfoWithdrawMoney">
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoDeposit">
 
         <LinearLayout
-            android:id="@+id/bottomReceiveMoney"
+            android:id="@+id/bottomSelectTerm"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginStart="24dp"
@@ -132,11 +143,11 @@
             tools:ignore="UseCompoundDrawables">
 
             <TextView
-                android:id="@+id/textReceiveMoney"
+                android:id="@+id/textSelectTerm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/account_receive_money"
+                android:text="@string/select_term"
                 android:textColor="@color/grey"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
@@ -148,6 +159,66 @@
                 app:tint="@color/blue"
                 android:importantForAccessibility="no" />
 
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/blue_bg"/>
+
+        <EditText
+            android:id="@+id/inputMoneySend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/white_bg"
+            android:inputType="number"
+            android:hint="@string/number_send"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLength="15"
+            android:importantForAutofill="no" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/blue_bg"/>
+
+        <LinearLayout
+            android:id="@+id/bottomSelectMaturityMethod"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/textSelectMaturityMethod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/select_maturity_method"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/caret_down"
+                app:tint="@color/blue"
+                android:importantForAccessibility="no" />
         </LinearLayout>
 
         <View

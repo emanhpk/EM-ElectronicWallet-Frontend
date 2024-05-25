@@ -112,4 +112,7 @@
     <string name="select_product_accumulation">Chọn loại sản phẩm tích lũy</string>
     <string name="memo_name">Tên ghi nhớ</string>
     <string name="accumulation_term">Tích lũy định kỳ</string>
+    <string name="info_payment">Thông tin nộp tiền</string>
+    <string name="select_account_deposit">Chọn tài khoản tích lũy</string>
+    <string name="account_deposit">Tài khoản gửi tích lũy Online</string>
 </resources>

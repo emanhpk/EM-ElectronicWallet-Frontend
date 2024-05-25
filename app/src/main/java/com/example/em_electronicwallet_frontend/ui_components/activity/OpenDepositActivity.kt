@@ -7,14 +7,14 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.em_electronicwallet_frontend.R
-import com.example.em_electronicwallet_frontend.databinding.ActivityOpenAccumulationBinding
+import com.example.em_electronicwallet_frontend.databinding.ActivityOpenDepositBinding
 
-class OpenAccumulationActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityOpenAccumulationBinding
+class OpenDepositActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityOpenDepositBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityOpenAccumulationBinding.inflate(layoutInflater)
+        binding = ActivityOpenDepositBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         window.setFlags(
