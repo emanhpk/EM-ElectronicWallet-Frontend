@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EMElectronicWalletFrontend"
         tools:targetApi="31">
         <activity
+            android:name=".ui_components.activity.OpenAccumulationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui_components.activity.WithdrawSavingsOnlineActivity"
             android:exported="false" />
         <activity

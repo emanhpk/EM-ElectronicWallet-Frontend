@@ -95,7 +95,7 @@
     <string name="save_online">Tiết kiệm Online</string>
     <string name="send_deposit_online">Gửi tiết kiệm Online</string>
     <string name="withdraw_deposit_online">Rút tiết kiệm Online</string>
-    <string name="open_accumulation">Mở tài khoản tiết kiệm</string>
+    <string name="open_accumulation">Mở tài khoản tích lũy</string>
     <string name="send_accumulation_online">Gửi tích lũy Online</string>
     <string name="withdraw_accumulation_online">Rút tích lũy Online</string>
     <string name="accumulation_online">Tích lũy Online</string>
@@ -108,4 +108,8 @@
     <string name="account_savings_online">Tài khoản tiết kiệm Online</string>
     <string name="info_withdraw_money">Thông tin rút tiền</string>
     <string name="account_receive_money">Tài khoản nhận tiền</string>
+    <string name="info_send_money">Thông tin tiền gửi</string>
+    <string name="select_product_accumulation">Chọn loại sản phẩm tích lũy</string>
+    <string name="memo_name">Tên ghi nhớ</string>
+    <string name="accumulation_term">Tích lũy định kỳ</string>
 </resources>
