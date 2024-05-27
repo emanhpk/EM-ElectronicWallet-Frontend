@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.em_electronicwallet_frontend.R
 import com.example.em_electronicwallet_frontend.databinding.FragmentHomeBinding
 import com.example.em_electronicwallet_frontend.ui_components.activity.DepositMoneyActivity
+import com.example.em_electronicwallet_frontend.ui_components.activity.PromotionActivity
 import com.example.em_electronicwallet_frontend.ui_components.activity.WireTransferActivity
 
 class HomeFragment : Fragment() {
@@ -46,6 +47,11 @@ class HomeFragment : Fragment() {
 
         binding.bottomSaveMoney.setOnClickListener {
             val intent = Intent(requireContext(), DepositMoneyActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.bottomPromotion.setOnClickListener {
+            val intent = Intent(requireContext(), PromotionActivity::class.java)
             startActivity(intent)
         }
     }

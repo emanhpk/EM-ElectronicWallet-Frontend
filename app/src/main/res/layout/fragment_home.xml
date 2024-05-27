@@ -275,6 +275,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/transfer_money"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -301,6 +302,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/bill"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -327,6 +329,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/credit_card"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -363,6 +366,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/phone_recharge"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -390,6 +394,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/_4g"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -416,6 +421,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/loan"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -452,6 +458,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/bus_ticket"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -478,6 +485,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/cinema_ticket"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -504,6 +512,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/balance_fluctuations"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -542,6 +551,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/financial_management"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -569,6 +579,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/support"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
@@ -596,6 +607,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
                                 android:text="@string/switchboard"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"

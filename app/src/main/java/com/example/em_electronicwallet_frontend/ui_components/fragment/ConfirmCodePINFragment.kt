@@ -24,7 +24,6 @@ import com.example.em_electronicwallet_frontend.databinding.FragmentConfirmCodeP
 import com.example.em_electronicwallet_frontend.ui_components.activity.SuccessfulTransactionActivity
 
 class ConfirmCodePINFragment : Fragment() {
-
     private var _binding: FragmentConfirmCodePINBinding? = null
     private val binding get() = _binding!!
 

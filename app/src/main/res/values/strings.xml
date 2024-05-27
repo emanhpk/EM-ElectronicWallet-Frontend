@@ -115,4 +115,17 @@
     <string name="info_payment">Thông tin nộp tiền</string>
     <string name="select_account_deposit">Chọn tài khoản tích lũy</string>
     <string name="account_deposit">Tài khoản gửi tích lũy Online</string>
+    <string name="my_gift">Quà của tôi</string>
+    <string name="text_support">Hỗ trợ</string>
+    <string name="text_available_points">Điểm EM-Point khả dụng</string>
+    <string name="points">2,402</string>
+    <string name="refund_money">Hoàn Tiền</string>
+    <string name="entertainment">Giải Trí</string>
+    <string name="cuisine">Ẩm Thực</string>
+    <string name="tv">Truyền Hình</string>
+    <string name="health">Sức Khỏe</string>
+    <string name="gift_suggestions">Gợi ý quà tặng</string>
+    <string name="gift_list_increased">Danh mục quà tăng</string>
+    <string name="expiry">Hạn sử dụng: 24/02/2025</string>
+    <string name="number_like_gift">2402</string>
 </resources>
